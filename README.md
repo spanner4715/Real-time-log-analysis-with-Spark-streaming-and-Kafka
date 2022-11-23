@@ -15,6 +15,27 @@ The information collected in web server logs can help us with:
 ## Architecture
 ![image](https://user-images.githubusercontent.com/103509243/202871088-6208354b-3430-4d6c-b811-fda05f9cb5fb.png)
 
+## Approach 
+### Environment setup
+(1) AWS EC2 instance
+(2) Docker installation and running  
+(3) Usage of docker-composer and starting all the tools  
+(4) How to access tools in local machine  
+### Log processing  
+(1) Common Log Format  
+(2) Parsing Log file  
+(3) Data Cleaning  
+(4) Fix the null values
+### Extraction  
+(1) Ingest data by using Nifi  
+(2) Create Kafka topic & publish log data
+### Transformation & Loading
+(1) Cassandra and HDFS set up (Create namespace and table in Cassandra and create a folder in HDFS)  
+(2) Read Streaming Data and Cleansing  
+(3) Data Loading (Continuous data load to Cassandra, writing data to HDFS for future analysis)
+### Visualization  
+(1) Scatter graph and Table definition with intervals using Python Plotly and Dash (Log Visualizer) 
+
 ## Nifi 
 ![image](https://user-images.githubusercontent.com/103509243/203096288-1b49c54c-986a-49e6-b15d-8d105065fdcd.png)
 ### Processor
