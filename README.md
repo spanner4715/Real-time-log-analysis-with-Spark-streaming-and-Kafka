@@ -53,6 +53,8 @@ Create different topics to hold different kinds of events and
 different topics to hold filtered and transformed versions of the same kind of event    
 Creation of topic named nasa_logs_demo:  
 kafka-topics.sh --create --topic nasa_logs_demo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181 
+![image](https://user-images.githubusercontent.com/103509243/203514608-9b22ccf6-8caa-4055-8d6e-61f8bbfab88b.png)
+
 
 ## Dashboard
 ### Real-time
